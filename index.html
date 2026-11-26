@@ -3,210 +3,350 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chakuoth Mayiel — Junior Cybersecurity Professional with a Computer Science background, networking knowledge, and software development experience.">
+  <meta name="author" content="Chakuoth Mayiel">
+  <meta name="theme-color" content="#05010f">
 
-  <title>Chakuoth Portfolio</title>
+  <title>Chakuoth Mayiel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-
   <script src="script.js" defer></script>
 </head>
 
 <body>
+  <!-- Background glow effects -->
+  <div class="glow glow1" aria-hidden="true"></div>
+  <div class="glow glow2" aria-hidden="true"></div>
 
-  <!-- Glow Effects -->
-  <div class="glow glow1"></div>
-  <div class="glow glow2"></div>
+  <!-- Navigation -->
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Chakuoth Mayiel home">
+      CHA <span>KUOTH</span>
+    </a>
 
-  <!-- Navbar -->
-  <header>
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="mainNav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <div class="logo">
-      CHA <span>  KUOTH</span>
-    </div>
-
-    <nav>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
 
-    <button class="nav-btn">
-      Hire Me <a href="mailto:chakuothmayiel@gmail.com" ></a>
-    </button>
-
+    <a class="nav-btn" href="mailto:chakuothmayiel@gmail.com">Hire Me</a>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
+  <main>
+    <!-- Hero -->
+    <section class="hero section-wrap" id="home">
+      <div class="hero-left">
+        <p class="tag">Junior Cybersecurity Professional</p>
 
-    <div class="hero-left">
+        <h1>Protecting Systems Against Modern Cyber Threats</h1>
 
-      <p class="tag">
-        Cybersecurity Analyst
-      </p>
+        <p class="hero-text">
+          I am a Computer Science student specializing in Cybersecurity at
+          Starford International University. I am developing practical skills
+          in network security, security monitoring, ethical hacking, Linux,
+          and software development through academic work, hands-on labs,
+          and continuous learning.
+        </p>
 
-      <h1>
-        Protecting Systems
-        Against Modern
-        Cyber Threats
-      </h1>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#projects">View Projects</a>
+          <a class="secondary-btn" href="Chakuoth Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
 
-      <p class="hero-text">
-        Computer Science student focused on cybersecurity,
-        penetration testing, ethical hacking, and network security.
-      </p>
-
-      <div class="hero-buttons">
-
-        <button class="primary-btn">
-          View Projects <a href="#projects"></a>
-        </button>
-
-        <button class="secondary-btn">
-          Download Resume <a href="Chakuoth Resume.pdf" download></a>
-        </button>
-
+        <div class="hero-links">
+          <a href="https://github.com/chakuoth211" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/chakuoth-mayiel-0b2b3a24a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:chakuothmayiel@gmail.com">Email</a>
+        </div>
       </div>
 
-    </div>
+      <div class="hero-card">
+        <img src="Profile/IMG_20251112_184808.jpg"
+            alt="Portrait of Chakuoth Mayiel">
+      </div>
+    </section>
 
-    <!-- Right Card -->
-    <div class="hero-card">
-
-      <img src="Chakuoth Portfolio/Profile/IMG_20251112_184808.jpg" alt="Profile">
-
-    </div>
-
-    </div>
-
-  </section>
-
-  <!-- Skills -->
-  <section class="skills-section" id="skills">
-
-    <h2>
-      Technical Skills
-    </h2>
-
-    <div class="skills-grid">
-
-      <div class="skill-box">
-        <h3>Cybersecurity</h3>
-
-        <ul>
-          <li>Penetration Testing</li>
-          <li>Ethical Hacking</li>
-          <li>Incident Response</li>
-          <li>Cryptography</li>
-        </ul>
+    <!-- Skills -->
+    <section class="content-section section-wrap" id="skills">
+      <div class="section-heading">
+        <p class="section-kicker">What I work with</p>
+        <h2>Technical Skills</h2>
+        <p>Foundational knowledge and practical tools I am actively developing.</p>
       </div>
 
-      <div class="skill-box">
-        <h3>Programming</h3>
+      <div class="card-grid">
+        <article class="glass-card skill-card">
+          <h3>Cybersecurity</h3>
+          <ul>
+            <li>Cybersecurity fundamentals</li>
+            <li>Ethical hacking practice labs</li>
+            <li>Vulnerability assessment practice</li>
+            <li>Security monitoring concepts</li>
+            <li>Network traffic analysis</li>
+          </ul>
+        </article>
 
-        <ul>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>Java</li>
-          <li>C++</li>
-        </ul>
+        <article class="glass-card skill-card">
+          <h3>Programming &amp; Development</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML &amp; CSS</li>
+            <li>Django</li>
+          </ul>
+        </article>
+
+        <article class="glass-card skill-card">
+          <h3>Networking &amp; Tools</h3>
+          <ul>
+            <li>TCP/IP fundamentals</li>
+            <li>Network protocols</li>
+            <li>Wireshark</li>
+            <li>Nmap</li>
+            <li>Linux / Ubuntu</li>
+            <li>Hack The Box labs</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="content-section section-wrap" id="projects">
+      <div class="section-heading">
+        <p class="section-kicker">Selected academic and development work</p>
+        <h2>Projects</h2>
+        <p>Work I can discuss, explain, and continue improving.</p>
       </div>
 
-      <div class="skill-box">
-        <h3>Networking</h3>
+      <div class="card-grid project-grid">
+        <article class="glass-card project-card">
+          <div class="project-topline">
+            <span class="project-type">Final-year academic project</span>
+          </div>
 
-        <ul>
-          <li>Network Security</li>
-          <li>Protocols</li>
-          <li>Firewalls</li>
-          <li>Troubleshooting</li>
-        </ul>
+          <h3>Network Traffic Analysis &amp; Security Threat Detection</h3>
+
+          <p>
+            An academic cybersecurity project exploring packet inspection
+            and rule-based identification of potentially suspicious network
+            activity. The prototype uses packet data to examine traffic
+            patterns and flag events for further review.
+          </p>
+
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Packet Analysis</span>
+            <span>Networking</span>
+            <span>Cybersecurity</span>
+          </div>
+
+          <p class="project-role">Role: Final-year project developer</p>
+
+          <p class="project-note">
+            Academic prototype. Testing scope and results are documented
+            in the project report; this is not presented as a production
+            network detection system.
+          </p>
+        </article>
+
+        <article class="glass-card project-card">
+          <div class="project-topline">
+            <span class="project-type">University development project</span>
+          </div>
+
+          <h3>Starford Student Digital Portal</h3>
+
+          <p>
+            A Django-based student portal developed for a university
+            environment. Features worked on include student registration
+            and authentication, a student dashboard, course registration,
+            and academic record management.
+          </p>
+
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Django</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Database</span>
+          </div>
+
+          <p class="project-role">Role: Developer</p>
+
+          <p class="project-note">
+            Built as an academic software project. Database technology
+            should be specified in the repository documentation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="content-section section-wrap" id="certifications">
+      <div class="section-heading">
+        <p class="section-kicker">Continuous learning</p>
+        <h2>Certifications &amp; Training</h2>
       </div>
 
-    </div>
+      <div class="card-grid">
+        <article class="glass-card skill-card">
+          <h3>Cisco Networking Academy</h3>
+          <ul>
+            <li>Networking Basics — completed</li>
+            <li>Introduction to Cybersecurity — completed</li>
+            <li>Python Essentials 1 — completed (30 hours)</li>
+          </ul>
+        </article>
 
-  </section>
+        <article class="glass-card skill-card">
+          <h3>Professional Development</h3>
+          <ul>
+            <li>CompTIA Security+ — in progress</li>
+            <li>Hack The Box practical learning labs</li>
+            <li>Independent Linux and networking practice</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-  <!-- Projects -->
-  <section class="projects-section" id="projects">
+    <!-- Experience -->
+    <section class="content-section section-wrap" id="experience">
+      <div class="section-heading">
+        <p class="section-kicker">Leadership and community involvement</p>
+        <h2>Experience &amp; Involvement</h2>
+      </div>
 
-    <h2>
-      Cybersecurity Projects
-    </h2>
+      <div class="card-grid project-grid">
+        <article class="glass-card project-card">
+          <span class="project-type">Founder / CEO</span>
+          <h3>Dave Remediations</h3>
+          <p>
+            Founded a cybersecurity-focused initiative with an interest in
+            digital infrastructure protection, security awareness,
+            threat identification, and practical remediation.
+          </p>
+          <div class="project-tech">
+            <span>Cybersecurity</span>
+            <span>Security Awareness</span>
+            <span>Leadership</span>
+          </div>
+        </article>
 
-    <div class="projects-grid">
+        <article class="glass-card project-card">
+          <span class="project-type">Volunteer</span>
+          <h3>St. Stephen Tech Bridge</h3>
+          <p>
+            Volunteer computer teacher supporting learners with basic
+            computer skills and foundational digital literacy.
+          </p>
+          <div class="project-tech">
+            <span>Computer Literacy</span>
+            <span>Teaching</span>
+            <span>Digital Skills</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <div class="project-card">
-        <h3>Password Checker</h3>
+    <!-- Achievements -->
+    <section class="content-section section-wrap" id="achievements">
+      <div class="section-heading">
+        <p class="section-kicker">Milestones</p>
+        <h2>Achievements</h2>
+      </div>
 
+      <div class="card-grid project-grid">
+        <article class="glass-card achievement-card">
+          <h3>IndabaX South Sudan 2026</h3>
+          <p>
+            Participated in the Food Insecurity Prediction Challenge,
+            gaining experience in collaborative problem-solving and
+            applied technology.
+          </p>
+        </article>
+
+        <article class="glass-card achievement-card">
+          <h3>Technical Learning</h3>
+          <p>
+            Completed three Cisco Networking Academy courses while
+            developing practical experience in programming, networking,
+            and cybersecurity.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="content-section section-wrap" id="contact">
+      <div class="section-heading">
+        <p class="section-kicker">Let's connect</p>
+        <h2>Contact Me</h2>
         <p>
-          Python-based password strength analyzer
-          with security scoring system.
+          Open to entry-level opportunities, internships, collaboration,
+          and professional learning.
         </p>
       </div>
 
-      <div class="project-card">
-        <h3>Port Scanner</h3>
+      <div class="card-grid contact-grid">
+        <article class="glass-card contact-card">
+          <h3>Email</h3>
+          <a href="mailto:chakuothmayiel@gmail.com">chakuothmayiel@gmail.com</a>
+        </article>
 
-        <p>
-          Custom network scanner for detecting
-          active ports and vulnerabilities.
-        </p>
+        <article class="glass-card contact-card">
+          <h3>Phone</h3>
+          <a href="tel:+211925912897">+211 925 912 897</a>
+        </article>
+
+        <article class="glass-card contact-card">
+          <h3>LinkedIn</h3>
+          <a
+            href="https://www.linkedin.com/in/chakuoth-mayiel-0b2b3a24a/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit LinkedIn Profile
+          </a>
+        </article>
+
+        <article class="glass-card contact-card">
+          <h3>GitHub</h3>
+          <a href="https://github.com/chakuoth211" target="_blank" rel="noopener noreferrer">
+            Visit GitHub Profile
+          </a>
+        </article>
       </div>
+    </section>
+  </main>
 
-      <div class="project-card">
-        <h3>Phishing Detection</h3>
-
-        <p>
-          AI-powered phishing email detection
-          and filtering project.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Contact -->
-  <section class="contact-section" id="contact">
-
-    <h2>
-      Contact Me
-    </h2>
-
-    <div class="contact-grid">
-
-      <div class="contact-card">
-        <h3>Email</h3>
-        <a href="mailto:chakuothmayiel@gmail.com">chakuothmayiel@gmail.com</a>
-      </div>
-
-      <div class="contact-card">
-        <h3>Phone</h3>
-        <a href="tel:+211925912897"></a>+211 925912897</a>
-      </div>
-
-      <div class="contact-card">
-        <h3>LinkedIn</h3>
-
-        <a href="https://www.linkedin.com/in/chakuoth-mayiel-0b2b3a24a/" target="_blank">
-          Visit Profile
-        </a>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Footer -->
-  <footer>
-
-    <p>
-      © 2026 Chakuoth Portfolio
-    </p>
-
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Chakuoth Mayiel. All rights reserved.</p>
+    <p>Cybersecurity · Networking · Software Development</p>
   </footer>
-
 </body>
 </html>
